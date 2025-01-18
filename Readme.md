@@ -68,5 +68,5 @@ SHOW TABLES;
 - TypeScript for type safety and scalability.
 
 ---
-Feel free to contribute to this project by submitting issues and pull requests!
+waiting for an update regarding next step to join Frontpage 
 
