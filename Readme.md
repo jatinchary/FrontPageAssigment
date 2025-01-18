@@ -41,11 +41,7 @@ Before setting up the project, ensure you have the following installed:
 
     ```bash
    docker-compose build
-   ```
-
-
-    ```bash
-  docker-compose up
+   docker-compose up
    ```
 
 
