@@ -10,14 +10,12 @@ const PORT_API = Number(process.env.API_PORT) || 3000;
 const PORT_WS = Number(process.env.WS_PORT) || 8080;
 
 (async () => {
-  // Establish database connection
+  
   const db = await connectDB();
-
-  // Mock function to get the latest stories
   const getLatestStories = () => [];
 
   // Start services
-  startScheduler('*/5 * * * *'); // Every 5 minute
+  startScheduler('*/5 * * * *'); 
   startAPIServer(PORT_API, getLatestStories);
   startWebSocketServer(PORT_WS, getLatestStories);
 })();

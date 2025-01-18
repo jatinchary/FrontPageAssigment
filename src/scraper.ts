@@ -8,7 +8,7 @@ export interface Story {
     siteLink: string;
     points: string;
     time: string;
-    timestamp: Date; // Add this line to resolve the error
+    timestamp: Date;
   }
   
 
@@ -31,7 +31,6 @@ export const scrapeHackerNews = async (): Promise<Story[]> => {
     const rows = $('#hnmain > tbody > tr:nth-child(3) > td > table > tbody > tr');
     
     rows.each((i, elem) => {
-      // Skip the last two elements since they contain extra metadata or navigation
       if (i % 3 === 0) {
         const titleElement = $(elem).find('.title > .titleline > a');
         const siteTitleElement = $(elem).find('.title > .titleline > span > a > span');
@@ -60,5 +59,4 @@ export const scrapeHackerNews = async (): Promise<Story[]> => {
   }
 };
 
-// Test the function
 scrapeHackerNews().then((stories) => console.log('Scraped Stories:', stories));
