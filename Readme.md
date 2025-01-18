@@ -44,13 +44,6 @@ Before setting up the project, ensure you have the following installed:
    docker-compose up
    ```
 
-
-## Configuration
-You can configure the WebSocket server by modifying the following settings in the code:
-- **Port:** Update the `port` parameter when calling `startWebSocketServer()`.
-
-
-
 ### Testing Tools:
 - Use [Postman](https://www.postman.com/) for WebSocket testing.
 - Using Postman
