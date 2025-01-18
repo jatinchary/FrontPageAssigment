@@ -50,11 +50,9 @@ Before setting up the project, ensure you have the following installed:
 Open Postman or any API testing tool.
 Create a GET request to the API endpoint:
 
-Edit
-URL: http://localhost:3000/api/stories
-Method: GET
-Send the request.
-If the API is working, you will receive a JSON response with the latest stories.
+- URL: http://localhost:3000/api/stories
+- Method: GET
+- Send the request. If the API is working, you will receive a JSON response with the latest stories.
 
 ### Verify the Database
 - Access the MySQL container:
